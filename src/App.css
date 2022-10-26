@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+.wrap {
+  background: white;
+}
+nav {
+  max-width: 550px;
+  max-height: 70px;
+  background: white;
+  padding: 22px 30px;
+  box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.navigation--logo {
+  width: 82px;
+  height: 25px;
+}
+.navigation--logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 36px;
+}
+.hero--image {
+  /* padding: 26px 77px 32px; */
+  max-width: 395px;
+  margin: 0 41px;
+}
+.hero--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero article {
+}
+.hero--title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.hero--text {
+  max-width: 320px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.card {
+  width: 180px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card--image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.card--label {
+  padding: 5px 6px 4px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  border-radius: 2px;
+}
+.card_info {
+}
+.card_info .rating {
+  /* display: flex; */
+}
+.rating--icon {
+  width: 14px;
+}
+.rating--userrating {
+  color: #222222;
+  font-size: 12px;
+  line-height: 1.1;
+}
+.rating--usercount {
+  color: #918e9b;
+  font-size: 12px;
+  line-height: 1.1;
+}
+.rating--country {
+  color: #918e9b;
+  font-size: 12px;
+  line-height: 1.1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.rating--country::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #918e9b;
+}
+.card_info .service {
+  color: #222222;
+  font-size: 12px;
+  line-height: 1.1;
+}
+.card_info .price {
+  color: #222222;
+  font-size: 12px;
+  line-height: 1.1;
+}
