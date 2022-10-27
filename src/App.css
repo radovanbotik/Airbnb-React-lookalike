@@ -117,6 +117,7 @@ section.hero {
   height: 2px;
   border-radius: 50%;
   background-color: #918e9b;
+  margin-right: 2px;
 }
 .card_info .service {
   color: #222222;
@@ -133,5 +134,6 @@ section.hero {
 }
 .card-slider {
   display: flex;
+  gap: 18px;
   padding: 36px 30px;
 }
