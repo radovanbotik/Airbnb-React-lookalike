@@ -68,6 +68,7 @@ section.hero {
   width: 100%;
   object-fit: cover;
   border-radius: 9px;
+  margin-bottom: 8px;
 }
 .card--label {
   padding: 5px 6px 4px;
@@ -79,9 +80,14 @@ section.hero {
   border-radius: 2px;
 }
 .card_info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .card_info .rating {
-  /* display: flex; */
+  display: flex;
+  gap: 2px;
+  align-items: center;
 }
 .rating--icon {
   width: 14px;
@@ -121,4 +127,11 @@ section.hero {
   color: #222222;
   font-size: 12px;
   line-height: 1.1;
+}
+.price--perperson {
+  font-weight: 600;
+}
+.card-slider {
+  display: flex;
+  padding: 36px 30px;
 }

@@ -13,11 +13,13 @@ export default function Card() {
           <span className="rating--usercount">(6)</span>
           <span className="rating--country">USA</span>
         </div>
-        <p className="service">Life lessions with Katie Zaferes</p>
+        <p className="service">Life lessons with Katie Zaferes</p>
         <div className="price">
-          <span>from</span>
-          <span className="price--value">136</span>
-          <span className="span">person</span>
+          <span className="price--perperson">
+            From <span id="price">$136</span>
+          </span>
+          <span>/</span>
+          <span className="price--personcount">person</span>
         </div>
       </article>
     </div>

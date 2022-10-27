@@ -2,14 +2,14 @@ import { useState } from "react";
 import "./App.css";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
-import Card from "./components/Card";
+import CardSlider from "./components/CardSlider";
 
 function App() {
   return (
     <div className="wrap">
       <Navigation />
       <Hero />
-      <Card />
+      <CardSlider />
     </div>
   );
 }
