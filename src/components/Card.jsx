@@ -19,7 +19,7 @@ export default function Card(props) {
         <p className="service">{title}</p>
         <div className="price">
           <span className="price--perperson">
-            From <span id="price">{price}</span>
+            From <span id="price">${price}</span>
           </span>
           <span>/</span>
           <span className="price--personcount">person</span>
