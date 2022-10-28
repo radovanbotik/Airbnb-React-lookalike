@@ -4,6 +4,7 @@ export default function Card(props) {
     <div className="card">
       <img src={`.././public/images/${img}`} alt="" className="card--image" />
       <div className="card--label">{badge ? "avaible" : "sold out"}</div>
+      {/* {badge ? null : <div className="card--label">sold out</div>} */}
       <article className="card_info">
         <div className="rating">
           <img
