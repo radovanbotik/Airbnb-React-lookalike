@@ -1,5 +1,6 @@
 export default function Card(props) {
-  const { location, img, price, rating, reviewcount, title, badge } = props;
+  const { location, coverImg: img, price, stats, title, badge } = props;
+  const { rating, reviewCount } = stats;
   return (
     <div className="card">
       <img src={`.././public/images/${img}`} alt="" className="card--image" />
@@ -13,7 +14,7 @@ export default function Card(props) {
             className="rating--icon"
           />
           <span className="rating--userrating">{rating}</span>
-          <span className="rating--usercount">({reviewcount})</span>
+          <span className="rating--usercount">({reviewCount})</span>
           <span className="rating--country">{location}</span>
         </div>
         <p className="service">{title}</p>
