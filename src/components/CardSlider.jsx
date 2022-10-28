@@ -13,6 +13,7 @@ export default function CardSlider() {
         reviewcount={entry.stats.reviewcount}
         description={entry.description}
         location={entry.location}
+        badge={entry.openSpots}
       />
     );
   });

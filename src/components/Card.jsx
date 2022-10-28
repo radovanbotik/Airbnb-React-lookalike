@@ -1,11 +1,12 @@
 import icon from "../assets/Images/Star.png";
 
 export default function Card(props) {
-  const { location, img, price, rating, reviewcount, description } = props;
+  const { location, img, price, rating, reviewcount, description, badge } =
+    props;
   return (
     <div className="card">
       <img src={`.././public/images/${img}`} alt="" className="card--image" />
-      <div className="card--label">sold out</div>
+      <div className="card--label">{badge ? "avaible" : "sold out"}</div>
       <article className="card_info">
         <div className="rating">
           <img src={icon} alt="" className="rating--icon" />
