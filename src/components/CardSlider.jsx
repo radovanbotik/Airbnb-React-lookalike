@@ -1,5 +1,4 @@
 import Card from "./Card";
-import image from "../assets/Images/Image12.png";
 import CardData from "../data";
 
 export default function CardSlider() {
@@ -11,7 +10,7 @@ export default function CardSlider() {
         price={entry.price}
         rating={entry.stats.rating}
         reviewcount={entry.stats.reviewcount}
-        description={entry.description}
+        title={entry.title}
         location={entry.location}
         badge={entry.openSpots}
       />

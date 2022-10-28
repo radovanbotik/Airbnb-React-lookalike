@@ -11,6 +11,7 @@
 }
 .wrap {
   background: white;
+  max-width: 550px;
 }
 nav {
   max-width: 550px;
@@ -123,6 +124,7 @@ section.hero {
   color: #222222;
   font-size: 12px;
   line-height: 1.1;
+  /* white-space: nowrap; */
 }
 .card_info .price {
   color: #222222;
@@ -133,6 +135,7 @@ section.hero {
   font-weight: 600;
 }
 .card-slider {
+  width: 100%;
   display: flex;
   gap: 18px;
   padding: 36px 30px;

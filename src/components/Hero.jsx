@@ -1,9 +1,8 @@
-import group from "../assets/Images/group.png";
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero--image">
-        <img src={group} alt="hero-image" />
+        <img src=".././public/images/photo-grid.png" alt="hero-image" />
       </div>
       <article>
         <h2 className="hero--title">Online Experiences</h2>
