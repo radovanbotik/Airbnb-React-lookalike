@@ -1,22 +1,22 @@
-import image from "../assets/Images/image12.png";
 import icon from "../assets/Images/Star.png";
 
-export default function Card() {
+export default function Card(props) {
+  const { country, img, price, rating, reviewcount, title } = props;
   return (
     <div className="card">
-      <img src={image} alt="" className="card--image" />
+      <img src={img} alt="" className="card--image" />
       <div className="card--label">sold out</div>
       <article className="card_info">
         <div className="rating">
           <img src={icon} alt="" className="rating--icon" />
-          <span className="rating--userrating">5.0</span>
-          <span className="rating--usercount">(6)</span>
-          <span className="rating--country">USA</span>
+          <span className="rating--userrating">{rating}</span>
+          <span className="rating--usercount">{reviewcount}</span>
+          <span className="rating--country">{country}</span>
         </div>
-        <p className="service">Life lessons with Katie Zaferes</p>
+        <p className="service">{title}</p>
         <div className="price">
           <span className="price--perperson">
-            From <span id="price">$136</span>
+            From <span id="price">{price}</span>
           </span>
           <span>/</span>
           <span className="price--personcount">person</span>
