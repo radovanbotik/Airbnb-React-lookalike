@@ -1,18 +1,21 @@
 import Card from "./Card";
 import image from "../assets/Images/Image12.png";
+import CardData from "../data";
 
 export default function CardSlider() {
-  return (
-    <div className="card-slider">
+  const cards = CardData.map((entry, index) => {
+    return (
       <Card
-        img={image}
-        rating={"5.0"}
-        reviewcount={6}
-        country={"Canada"}
-        title={"Life lessons with Katie Zaferes"}
-        price={136}
+        key={index}
+        img={entry.coverImg}
+        price={entry.price}
+        rating={entry.stats.rating}
+        reviewcount={entry.stats.reviewcount}
+        description={entry.description}
+        location={entry.location}
       />
-      <Card />
-    </div>
-  );
+    );
+  });
+  console.log(cards);
+  return <div className="card-slider">{cards}</div>;
 }
